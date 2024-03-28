@@ -1,4 +1,4 @@
-name: Lint,Test,Deploy app in one job
+name: Lint,Test,Deploy app in three job
 on: [push,workflow_dispatch ]
 jobs:
   lint:
