@@ -1,0 +1,12 @@
+nameL test
+on:
+ workflow_dispatch:
+
+jobs:
+  test:
+    name: Select Environment
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          az version
+          az upgrade -y
