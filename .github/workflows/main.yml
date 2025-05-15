@@ -9,4 +9,6 @@ jobs:
     steps:
       - run: |
           az version
+          az extension add --name datafactory
+      - run: |
           az upgrade -y
