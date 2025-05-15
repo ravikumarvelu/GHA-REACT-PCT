@@ -1,6 +1,7 @@
 name: test
 on:
  workflow_dispatch:
+ push:
 
 jobs:
   test:
@@ -11,4 +12,5 @@ jobs:
           az version
           az extension add --name datafactory
       - run: |
+          az version
           az upgrade -y
